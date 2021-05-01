@@ -1,0 +1,4 @@
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 2\Exercicio 1\Exercicio 1\Exercicio 1\bin\Debug\Exercicio 1.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 2\Exercicio 1\Exercicio 1\Exercicio 1\bin\Debug\Exercicio 1.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 2\Exercicio 1\Exercicio 1\Exercicio 1\obj\x86\Debug\Exercicio 1.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 2\Exercicio 1\Exercicio 1\Exercicio 1\obj\x86\Debug\Exercicio 1.pdb
