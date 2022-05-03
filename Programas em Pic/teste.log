@@ -1,0 +1,12 @@
+Line	MessageNo	File Name
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo8 -N"C:\Users\Renan\Desktop\Exercicios Curso Visual C\Programas em Pic\teste.mcppi" -SP"C:\Program Files (x86)\Mikroelektronika\mikroC PRO for PIC\defs\" -SP"C:\Program Files (x86)\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Renan\Desktop\Exercicios Curso Visual C\Programas em Pic\" "teste.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+diagnostics: 0	125	All files Preprocessed in 140 ms	 
+diagnostics: 0	121	Compilation Started	teste.c
+diagnostics: 22	122	Compiled Successfully	teste.c
+diagnostics: 0	126	All files Compiled in 125 ms	 
+hint: 0	1140	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)
+hint: 0	1140	Used ROM (program words): 16 (1%)  Free ROM (program words): 8176 (99%)	Used ROM (program words): 16 (1%)  Free ROM (program words): 8176 (99%)
+diagnostics: 0	124	Project Linked Successfully	teste.mcppi
+diagnostics: 0	127	Linked in 312 ms	 
+diagnostics: 0	128	Project 'teste.mcppi' completed: 718 ms	 
+diagnostics: 0	103	Finished successfully: 12 ago 2015, 14:36:05	teste.mcppi

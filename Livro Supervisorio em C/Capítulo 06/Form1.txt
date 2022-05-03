@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Ex01_06
+{
+    public partial class Form1 : Form
+    {
+        veiculo carro = new veiculo();
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            carro.Prop = textBox1.Text;
+            carro.Marca = textBox2.Text;
+            carro.Modelo = textBox3.Text;
+            carro.Cor = textBox4.Text;
+            carro.Ano = textBox5.Text;
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(carro.Prop);
+            listBox1.Items.Add(carro.Marca);
+            listBox1.Items.Add(carro.Modelo);
+            listBox1.Items.Add(carro.Cor);
+            listBox1.Items.Add(carro.Ano);
+
+        }
+    }
+}

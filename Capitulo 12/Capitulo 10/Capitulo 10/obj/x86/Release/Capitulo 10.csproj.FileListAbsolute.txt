@@ -1,0 +1,10 @@
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\bin\Release\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\bin\Release\Capitulo 10.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\bin\Release\AGauge.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\bin\Release\XYGraph.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\Capitulo 10.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\APP1911.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\APP1911.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\Capitulo 10.csproj.GenerateResource.Cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 11\Capitulo 10\Capitulo 10\obj\x86\Release\Capitulo 10.pdb

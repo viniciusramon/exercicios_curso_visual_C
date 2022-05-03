@@ -1,0 +1,86 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO.Ports;
+
+namespace Ex01_13
+{
+    public partial class Form2 : Form
+    {
+        SerialPort COMSerial = new SerialPort();
+
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            bool setcom = false;
+
+            foreach (string str in SerialPort.GetPortNames())
+            {
+                cmbPorta.Items.Add(str);
+                if (str == "COM1") setcom = true;
+            }
+
+            if (setcom)
+                cmbPorta.SelectedText = "COM1";
+            else
+                cmbPorta.SelectedIndex = 0;
+
+            cmbBaud.Text = "9600";
+
+            int i = 0;
+
+            foreach (string str in Enum.GetNames(typeof(Parity)))
+            {
+                cmbPar.Items.Add(str);
+
+                if (str == "None")
+                    cmbPar.SelectedIndex = i;
+
+                i++;
+            }
+
+            i = 0;
+
+            foreach (string str in Enum.GetNames(typeof(StopBits)))
+            {
+                cmbStop.Items.Add(str);
+
+                if (str == "One")
+                    cmbStop.SelectedIndex = i;
+
+                i++;
+            }
+            cmbData.Text = "8";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Global.Porta = cmbPorta.Text;
+            Global.BRate = cmbBaud.Text;
+            Global.SBits = cmbStop.Text;
+            Global.DBits = cmbData.Text;
+            Global.Paridade = cmbPar.Text;
+            Global.Cancela = false;
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Garante o fechamento da porta serial
+            if (COMSerial.IsOpen) COMSerial.Close();
+            Global.Cancela = true;
+            Close();
+        }
+
+
+    }
+}

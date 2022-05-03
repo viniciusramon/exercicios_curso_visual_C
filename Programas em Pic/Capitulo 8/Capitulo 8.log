@@ -1,0 +1,13 @@
+Line	MessageNo	File Name
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo8 -N"C:\Users\Renan\Desktop\Exercicios Curso Visual C\Programas em Pic\Capitulo 8\Capitulo 8.mcppi" -SP"C:\Program Files (x86)\Mikroelektronika\mikroC PRO for PIC\defs\" -SP"C:\Program Files (x86)\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Renan\Desktop\Exercicios Curso Visual C\Programas em Pic\Capitulo 8\" "Capitulo 8.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_UART_c67.mcl"	 
+diagnostics: 0	125	All files Preprocessed in 63 ms	 
+diagnostics: 0	121	Compilation Started	Capitulo 8.c
+warning: 16	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	Capitulo 8.c
+diagnostics: 38	122	Compiled Successfully	Capitulo 8.c
+diagnostics: 0	126	All files Compiled in 187 ms	 
+hint: 0	1140	Used RAM (bytes): 15 (4%)  Free RAM (bytes): 337 (96%)	Used RAM (bytes): 15 (4%)  Free RAM (bytes): 337 (96%)
+hint: 0	1140	Used ROM (program words): 171 (2%)  Free ROM (program words): 8021 (98%)	Used ROM (program words): 171 (2%)  Free ROM (program words): 8021 (98%)
+diagnostics: 0	124	Project Linked Successfully	Capitulo 8.mcppi
+diagnostics: 0	127	Linked in 390 ms	 
+diagnostics: 0	128	Project 'Capitulo 8.mcppi' completed: 811 ms	 
+diagnostics: 0	103	Finished successfully: 12 ago 2015, 15:59:19	Capitulo 8.mcppi

@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace EX01_03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.SetWindowSize(50, 30);
+            Console.Title = "Curso Supervisório - Visual C# (ACEPIC)!";
+
+            string nome;
+            double peso, altura;
+            double IMC;
+
+            Console.Write("Entre com o seu nome: ");
+            nome = Console.ReadLine();
+
+            Console.Write("Entre com o seu peso (Exemplo: 76,5): ");
+            peso = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter com a sua altura (Exemplo: 1,80): ");
+            altura = Convert.ToDouble(Console.ReadLine());
+
+            IMC = peso / (altura * altura);
+
+            Console.WriteLine("");
+
+            Console.WriteLine(nome + ", o seu IMC é de: " + IMC);
+
+            if (IMC <= 18.5)
+                Console.WriteLine("Vôcê está abaixo do peso ideal.");
+            if (IMC >= 18.6 && IMC <= 24.9)
+                Console.WriteLine("Parabéns, você está em seu peso ideal.");
+            if (IMC >= 25 && IMC <= 29.9)
+                Console.WriteLine("Você está Levemente acima do seu peso ideal.");
+            if (IMC >= 30 && IMC <= 34.9)
+                Console.WriteLine("Cuidado. você está no primeiro grau de obesidade.");
+            if (IMC >= 35 && IMC <= 39.9)
+                Console.WriteLine("Cuidado. você está no segundo grau de obesidade.");
+            if (IMC >= 40)
+                Console.WriteLine("Muito Cuidado... você está com obesidade mórbida.");
+
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ex02_02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.SetWindowSize(50, 30);
+            Console.Title = "Curso Supervisório - Visual C# (ACEPIC)!";
+
+            int[] nota = new int[] {50, 75, 38, 89, 93, 80, 65, 87, 98, 76};
+            int[] faltas = new int[] { 3, 6, 5, 4, 8, 2, 9, 7, 1, 0 }; 
+            string[] aluno = new string[] { "Carlos", "João", "Laura", 
+                                            "Carla", "Alex", "José",
+                                            "Pedro", "Ana", "Maria", "Taís" };
+                        
+            
+            Console.WriteLine("Nota de " + aluno[0] + ", Nota = " + nota[0] + ", Faltas = " + faltas[0]);
+            Console.WriteLine("Nota de " + aluno[1] + ", Nota = " + nota[1] + ", Faltas = " + faltas[1]);
+            Console.WriteLine("Nota de " + aluno[2] + ", Nota = " + nota[2] + ", Faltas = " + faltas[2]);
+            Console.WriteLine("Nota de " + aluno[3] + ", Nota = " + nota[3] + ", Faltas = " + faltas[3]);
+            Console.WriteLine("Nota de " + aluno[4] + ", Nota = " + nota[4] + ", Faltas = " + faltas[4]);
+            Console.WriteLine("Nota de " + aluno[5] + ", Nota = " + nota[5] + ", Faltas = " + faltas[5]);
+            Console.WriteLine("Nota de " + aluno[6] + ", Nota = " + nota[6] + ", Faltas = " + faltas[6]);
+            Console.WriteLine("Nota de " + aluno[7] + ", Nota = " + nota[7] + ", Faltas = " + faltas[7]);
+            Console.WriteLine("Nota de " + aluno[8] + ", Nota = " + nota[8] + ", Faltas = " + faltas[8]);
+            Console.WriteLine("Nota de " + aluno[9] + ", Nota = " + nota[9] + ", Faltas = " + faltas[9]);
+
+            Console.WriteLine("\nPressione uma tecla para finalizar...");
+            Console.ReadKey();
+
+        }
+    }
+}

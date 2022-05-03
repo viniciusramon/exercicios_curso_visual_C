@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ex02_03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.SetWindowSize(50, 30);
+            Console.Title = "Curso Supervisório - Visual C# (ACEPIC)!";
+
+            int mes;
+
+            Console.Write("Entre com um número entre 1 e 12: ");
+            mes = Convert.ToInt32(Console.ReadLine());
+
+            switch (mes)
+            {
+                case 1: Console.WriteLine("Mês de janeiro.");
+                    break;
+                case 2: Console.WriteLine("Mês de fevereiro.");
+                    break;
+                case 3: Console.WriteLine("Mês de março.");
+                    break;
+                case 4: Console.WriteLine("Mês de abril.");
+                    break;
+                case 5: Console.WriteLine("Mês de maio.");
+                    break;
+                case 6: Console.WriteLine("Mês de junho.");
+                    break;
+                case 7: Console.WriteLine("Mês de julho.");
+                    break;
+                case 8: Console.WriteLine("Mês de agosto.");
+                    break;
+                case 9: Console.WriteLine("Mês de setembro.");
+                    break;
+                case 10: Console.WriteLine("Mês de outubro.");
+                    break;
+                case 11: Console.WriteLine("Mês de novembro.");
+                    break;
+                case 12: Console.WriteLine("Mês de dezembro.");
+                    break;
+                default: Console.WriteLine("Não existe mês correspondente ao valor digitado.");
+                    break;
+            }
+
+            Console.ReadKey();
+
+
+
+        }
+    }
+}

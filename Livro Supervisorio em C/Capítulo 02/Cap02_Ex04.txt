@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ex04_02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.SetWindowSize(50, 30);
+            Console.Title = "Curso Supervisório - Visual C# (ACEPIC)!";
+
+            string nome;
+            double peso, altura;
+            double IMC;
+
+            Console.Write("Entre com o seu nome: ");
+            nome = Console.ReadLine();
+
+            Console.Write("Entre com o seu peso (Exemplo: 76,5): ");
+            peso = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter com a sua altura (Exemplo: 1,80): ");
+            altura = Convert.ToDouble(Console.ReadLine());
+
+            IMC = peso / (altura * altura);
+
+            Console.WriteLine("");
+
+            Console.WriteLine(nome + ", o seu IMC é de: " + IMC);            
+
+            Console.ReadKey();
+        }
+    }
+}

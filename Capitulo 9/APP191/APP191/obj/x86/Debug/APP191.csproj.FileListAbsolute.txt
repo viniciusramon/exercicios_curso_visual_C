@@ -1,0 +1,16 @@
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\obj\x86\Debug\APP191.Form1.resources
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\obj\x86\Debug\APP191.Properties.Resources.resources
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\obj\x86\Debug\APP191.csproj.GenerateResource.Cache
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\bin\Debug\APP191.exe
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\bin\Debug\APP191.pdb
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\obj\x86\Debug\APP191.exe
+C:\Users\Renan\AppData\Local\Temporary Projects\APP191\obj\x86\Debug\APP191.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\bin\Debug\APP191.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\bin\Debug\APP191.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\bin\Debug\AGauge.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.csproj.GenerateResource.Cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP191\APP191\obj\x86\Debug\APP191.csprojResolveAssemblyReference.cache

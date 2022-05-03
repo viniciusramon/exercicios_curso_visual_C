@@ -1,0 +1,363 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO.Ports;
+using System.IO;
+
+using System.Drawing.Drawing2D;
+
+
+namespace Ex01_13
+{
+    public partial class Form1 : Form
+    {
+        //Instanciando a classe 
+        SerialPort SerialCom = new SerialPort();
+
+        string bfRecebe = string.Empty;
+
+        //Criando o método(função) Fdelegate que vai receber o parâmetro do tipo string 'a'
+        public delegate void Fdelegate(string a);
+
+        List<string> TempList = new List<string>();
+
+        string txt_rec = string.Empty;
+        string txt_list = string.Empty;
+
+        int qtde_data = 0;
+
+        float eixo_x = 0;
+        float eixo_y = 0;
+
+        bool vent = false, aq = false;
+        bool l1 = false, l2 = false, l3 = false, l4 = false;
+
+        public Form1()
+        {
+            InitializeComponent();
+            SerialCom.DataReceived += new SerialDataReceivedEventHandler(SerialCom_DataReceived);
+        }
+
+        void SerialCom_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            //throw new NotImplementedException();
+            bfRecebe = SerialCom.ReadExisting();
+
+            this.BeginInvoke(new Fdelegate(recebe_serial), new object[] { bfRecebe });
+        }
+
+        public void recebe_serial(string a)
+        {
+            string[] txtSplit;
+            int volts, temp;
+
+            txt_rec += a;
+
+            if (txt_rec.Length >= 26)
+            {
+                txtSplit = txt_rec.Split(':');
+                txt_rec = string.Empty;
+
+                if (txtSplit[0] == "AN0")
+                {
+                    txt_list = txtSplit[0] + ":" + txtSplit[1] + ":" + txtSplit[2] + ":" + txtSplit[3];
+                    volts = Convert.ToInt32(txtSplit[1]);
+                    aGauge1.Value = (volts * 5000) / 1023;
+                    aGauge1.Cap_Idx = 1;
+                    aGauge1.CapText = aGauge1.Value.ToString() + " mV";
+
+                    temp = Convert.ToInt32(txtSplit[3]);
+                    aGauge2.Value = ((temp * 500) / 1023);
+                    aGauge2.Cap_Idx = 1;
+                    aGauge2.CapText = aGauge2.Value.ToString() + " " + (char)176 + "C";
+
+                    label7.Text = "Temperatura e Tensão dentro dos limites.";
+                    label7.ForeColor = Color.Black;
+
+                    if (aGauge1.Value > 4000)
+                    {
+                        label7.Text = "Atenção: Tensão maior que 4000 mV.";
+                        label7.ForeColor = Color.Red;
+                    }
+                    if (aGauge2.Value > 30)
+                    {
+                        label7.Text = "Atenção: Temperatura maior que 30" + (char)176 + " C.";
+                        label7.ForeColor = Color.Red;
+                    }
+                    if ((aGauge1.Value > 4000) && (aGauge2.Value >= 30))
+                    {
+                        label7.Text = "Atenção: Temperatura e tensão acima dos limites.";
+                        label7.ForeColor = Color.Red;
+                    }
+                   
+
+
+                    //Verifica Led 1
+                    if (txtSplit[4].Substring(4, 1) == "1")
+                    {
+                        pictureBox1.Image = Ex01_13.Properties.Resources.LED_ON;
+                        l1 = true;
+                    }
+                    else
+                    {
+                        pictureBox1.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        l1 = false;
+                    }
+
+                    //Verifica Led 2
+                    if (txtSplit[4].Substring(5, 1) == "1")
+                    {
+                        pictureBox2.Image = Ex01_13.Properties.Resources.LED_ON;
+                        l2 = true;
+
+                    }
+                    else
+                    {
+                        pictureBox2.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        l2 = false;
+                    }
+
+                    //Verifica Led 3
+                    if (txtSplit[4].Substring(6, 1) == "1")
+                    {
+                        pictureBox3.Image = Ex01_13.Properties.Resources.LED_ON;
+                        l3 = true;
+                    }
+                    else
+                    {
+                        pictureBox3.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        l3 = false;
+                    }
+
+                    //Verifica Led 4
+                    if (txtSplit[4].Substring(7, 1) == "1")
+                    {
+                        pictureBox4.Image = Ex01_13.Properties.Resources.LED_ON;
+                        l4 = true;
+                    }
+                    else
+                    {
+                        pictureBox4.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        l4 = false;
+                    }
+
+                    //Verifica Aquecedor
+                    if (txtSplit[4].Substring(0, 1) == "1")
+                    {
+                        pictureBox5.Image = Ex01_13.Properties.Resources.LED_ON;
+                        aq = true;
+                    }
+                    else
+                    {
+                        pictureBox5.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        aq = false;
+                    }
+
+                    //Verifica Ventoinha
+                    if (txtSplit[4].Substring(1, 1) == "1")
+                    {
+                        pictureBox6.Image = Ex01_13.Properties.Resources.LED_ON;
+                        vent = true;
+                    }
+                    else
+                    {
+                        pictureBox6.Image = Ex01_13.Properties.Resources.LED_OFF;
+                        if (vent && !aq)
+                        {
+                            vent = false;
+
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            xyGraph1.AddGraph("XtraTitle", DashStyle.Solid, Color.White, 1, false);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            button4.Enabled = false;
+            button5.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button4.Enabled = true;
+            button5.Enabled = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TempList.Add(DateTime.Now + " - " + txt_list);
+            qtde_data++;
+
+            eixo_y = aGauge2.Value;
+            eixo_x++;
+            if (eixo_x >= 120)
+            {
+                timer1.Enabled = false;
+                button4.Enabled = true;
+                button5.Enabled = false;
+            }
+
+            xyGraph1.AddValue(0, eixo_x, eixo_y);
+            xyGraph1.DrawAll();
+        }
+
+        private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextWriter Arq;
+
+            try
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    Arq = File.AppendText(saveFileDialog1.FileName);
+
+                    for (int i = 0; i < qtde_data; i++)
+                        Arq.WriteLine(TempList[i]);
+
+                    Arq.Close();
+                }
+
+                MessageBox.Show("Cadastro realizado com sucesso!");
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.ToString());
+            }
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            StreamReader Arq;
+            string recebe = string.Empty;
+
+            eixo_x = 0;
+
+            xyGraph1.ClearGraph(0);
+
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    Arq = new StreamReader(openFileDialog1.FileName);
+
+
+                    while (!(Arq.EndOfStream))
+                    {
+                        recebe = Arq.ReadLine().Substring(35, 4);
+
+                        eixo_y = (float.Parse(recebe) * 500) / 1023;
+
+                        xyGraph1.AddValue(0, eixo_x, eixo_y);
+                        xyGraph1.DrawAll();
+                        eixo_x++;
+                    }
+                }
+            }
+
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.ToString());
+            }
+        }
+
+        private void configuraçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 nForm = new Form2();
+            nForm.ShowDialog();
+
+            if (!Global.Cancela)
+            {
+
+                try
+                {
+                    if (SerialCom.IsOpen) SerialCom.Close();
+
+                    SerialCom.PortName = Global.Porta;
+                    SerialCom.BaudRate = int.Parse(Global.BRate);
+                    SerialCom.StopBits = (StopBits)Enum.Parse(typeof(StopBits), Global.SBits);
+                    SerialCom.DataBits = int.Parse(Global.DBits);
+                    SerialCom.Parity = (Parity)Enum.Parse(typeof(Parity), Global.Paridade);
+
+                    button4.Enabled = true;
+
+                    SerialCom.Open();
+
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível abrir a Porta Serial!");
+                }
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (!l1) SerialCom.Write("LG1\r");
+
+            else SerialCom.Write("DG1\r");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (!l2) SerialCom.Write("LG2\r");
+
+            else SerialCom.Write("DG2\r");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (!l3) SerialCom.Write("LG3\r");
+
+            else SerialCom.Write("DG3\r");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (!l4) SerialCom.Write("LG4\r");
+
+            else SerialCom.Write("DG4\r");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (!aq) SerialCom.Write("LGA\r");
+
+            else SerialCom.Write("DGA\r");
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 Fsobre = new Form3();
+            Fsobre.ShowDialog();
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ex01_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "Curso Supervisório - Visual C#!";
+
+            Console.WriteLine("Carlos Eduardo S. Luz");
+            Console.WriteLine("==================");
+            Console.WriteLine("Campinas, 08 de maio de 2012");
+
+            
+            Console.ReadKey(); 
+        }
+    }
+}

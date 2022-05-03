@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ex01_02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Blue;
+
+            Console.Clear();
+
+            Console.SetWindowSize(50, 30);  //Largura x Altura
+            Console.Title = "Curso Supervisório - Visual C#!";
+
+            string nome = "Carlos Eduardo Sandrini Luz";
+            int idade = 35;
+            float peso = 75.8F;
+
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Idade: " + idade + " anos");
+            Console.WriteLine("Peso: " + peso + " Kg");
+
+            Console.ReadKey();
+        }
+    }
+}

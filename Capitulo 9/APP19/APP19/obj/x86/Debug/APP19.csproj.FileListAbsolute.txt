@@ -1,0 +1,24 @@
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\bin\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\bin\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.csproj.GenerateResource.Cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 6 teste\APP19\APP19\obj\x86\Debug\APP19.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\bin\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\bin\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.csproj.GenerateResource.Cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 8\APP19\APP19\obj\x86\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\bin\Debug\APP19.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\bin\Debug\APP19.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 9\APP19\APP19\obj\x86\Debug\APP19.csproj.GenerateResource.Cache

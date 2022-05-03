@@ -1,0 +1,21 @@
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\bin\Debug\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\bin\Debug\Capitulo 10.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\bin\Debug\AGauge.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\bin\Debug\XYGraph.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\APP1911.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\APP1911.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 12.csproj.GenerateResource.Cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 10.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 12\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 12.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 10.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\bin\Debug\Capitulo 10.exe
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\bin\Debug\Capitulo 10.pdb
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\bin\Debug\AGauge.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\bin\Debug\XYGraph.dll
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 12.csprojResolveAssemblyReference.cache
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\APP1911.Form1.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\APP1911.Form2.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\APP1911.Properties.Resources.resources
+C:\Users\Renan\Desktop\Exercicios Curso Visual C\Capitulo 13\Capitulo 10\Capitulo 10\obj\x86\Debug\Capitulo 12.csproj.GenerateResource.Cache
